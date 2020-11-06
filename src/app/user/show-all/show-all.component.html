@@ -1,0 +1,35 @@
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nombres</th>
+            <th>Apellidos</th>
+            <th>Username</th>
+            <th>Contraseña</th>
+            <th>Email</th>
+            <th>Rol</th>
+            <th>Opciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let dataItem of UserList">
+            <td>{{dataItem.id_user}}</td>
+            <td>{{dataItem.firstname}}</td>
+            <td>{{dataItem.lastname}}</td>
+            <td>{{dataItem.username}}</td>
+            <td>{{dataItem.password}}</td>
+            <td>{{dataItem.email}}</td>
+            <td>{{dataItem.role_id}}</td>
+            <td>
+                <button type="button" class="btn btn-light mr-1">
+                    Editar
+                </button>
+                <button type="button" class="btn btn-light mr-1">
+                    Borrar
+                </button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
