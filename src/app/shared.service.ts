@@ -6,12 +6,12 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class SharedService {
-readonly APIurl="https://localhost:44347/api";
+readonly APIurl="/api";
 
   constructor(private http:HttpClient) { }
 
   getUsersList():Observable<any[]>{
-    return this.http.get<any>(this.APIurl+'/User')
+    return this.http.get<any>(this.APIurl+'/user');
   }
 
   addUser(val:any){
