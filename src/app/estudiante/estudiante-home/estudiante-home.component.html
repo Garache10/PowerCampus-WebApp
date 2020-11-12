@@ -1,27 +1,22 @@
-<div class="container">
-    <h3 class="d-flex justify-content-center">POWERCAMPUS 2</h3>
-    <h5 class="d-flex justify-content-center">SISTEMA DE INSCRIPCIÓN DE UNIVERSIDAD CENTROAMERICANA</h5>
-
-    <nav class="navbar navbar-expand-sm bg-light navbar-dark">
-        <div class="center">
-            <ul class="navbar-nav">
-                <li class="navbar-item">
-                    <a routerLink="user" >Inscripción</a>
-                </li>
-                <li class="navbar-item">
-                    <a routerLink="user2" >Calificaciones</a>
-                </li>
-                <li class="navbar-item">
-                    <a routerLink="user3" >Horario</a>
-                </li>
-                <li class="navbar-item">
-                    <a routerLink="user3" >Carrito</a>
-                </li>
-                <li class="navbar-item">
-                    <a routerLink="/profile" >Mi perfil</a>
-                </li>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>PW2-Estudiante</title>
+        <link rel="stylesheet" href="./estudiante-home.component.css">
+    </head>
+    <body>
+        <header class="">
+            <a href="#" class="logo">PW2</a>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Inscripciones</a></li>
+                <li><a href="#">Asignaturas</a></li>
+                <li><a href="#">Carrito</a></li>
+                <li><a href="#">Perfil</a></li>
             </ul>
-        </div>
-    </nav>
-    <router-outlet></router-outlet>
-</div>
+        </header>
+        <section class="banner"></section>
+        <router-outlet></router-outlet>
+    </body>
+</html>
